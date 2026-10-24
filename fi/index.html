@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hoidio – lääkemuistio ikääntyville ja omaishoitajille</title>
-  <meta name="description" content="Hoidio auttaa pitämään kirjaa lääkkeistä, uusinnoista ja lääkärikäynneistä, ja läheiset voivat seurata mukana. Farmaseutin suunnittelema, tehty Suomessa.">
+  <title>Hoidio – lääkkeet ajallaan, läheiset huoletta</title>
+  <meta name="description" content="Hoidio muistuttaa jokaisesta annoksesta ja kertoo läheisillesi, että kaikki on hyvin. Lääkemuistio ikääntyville ja omaishoitajille, farmaseutin suunnittelema.">
   <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
     <div class="wrap">
       <a class="brand" href="/fi/"><img src="/logo.svg" alt=""><span>Hoid<span class="io">io</span></span></a>
       <nav class="site-nav" aria-label="Päävalikko">
-        <a href="/fi/" aria-current="page">Etusivu</a>
+        <a href="#miten">Näin se toimii</a>
         <a href="#tuki">Tuki</a>
         <a href="/fi/tietosuoja.html">Tietosuoja</a>
         <a href="/" lang="en">English</a>
@@ -23,32 +26,76 @@
 
   <div class="hero">
     <div class="wrap">
-      <h1>Lääkkeesi järjestyksessä – ja läheisesi mukana.</h1>
-      <p>Hoidio muistuttaa jokaisesta annoksesta, pitää terveystietosi yhdessä paikassa ja antaa omaishoitajien seurata mukana.</p>
-      <span class="badge">Tulossa pian App Storeen ja Google Playhin</span>
+      <div>
+        <h1><span class="line1">Lääkkeet ajallaan.</span> <span class="line2">Läheiset huoletta.</span></h1>
+        <p class="lede">Hoidio muistuttaa jokaisesta annoksesta ja näyttää läheisillesi, että kaikki on hyvin.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#miten">Katso, miten se toimii</a>
+          <a class="button ghost" href="#tuki">Kysy meiltä</a>
+        </div>
+        <p class="soon">Tulossa pian iPhoneen ja Androidiin.</p>
+      </div>
+
+      <div class="demo" role="img" aria-label="Hoidio puhelimessa: klo 8.00 lääkkeet merkitään otetuiksi, ja Sara näkee omasta puhelimestaan, että äiti on ottanut ne.">
+        <div class="phone" aria-hidden="true">
+          <div class="phone-top"><strong>Tänään</strong><span>tiistai</span></div>
+          <div class="dose done"><span class="time">7.30</span><span class="what"><b>Levotyroksiini</b>50 µg · 1 tabletti</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="dose done animate"><span class="time">8.00</span><span class="what"><b>Metformiini</b>500 mg · ruoan kanssa</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="dose later"><span class="time">14.00</span><span class="what"><b>D-vitamiini</b>20 µg · 1 kapseli</span><span class="tick"></span></div>
+          <div class="dose later"><span class="time">20.00</span><span class="what"><b>Simvastatiini</b>20 mg · 1 tabletti</span><span class="tick"></span></div>
+        </div>
+        <div class="toast" aria-hidden="true"><img src="/logo.svg" alt=""><span><b>Saran puhelimessa</b>Äiti on ottanut klo 8 lääkkeensä.</span></div>
+      </div>
     </div>
   </div>
 
-  <main class="wrap">
-    <section>
-      <h2>Mitä Hoidio tekee</h2>
-      <div class="grid">
-        <div class="card"><h3>Päivän lääkkeet ja muistutukset</h3><p>Näet päivän annokset yhdellä silmäyksellä. Muistutus voi toistua, jotta annos ei unohdu.</p></div>
-        <div class="card"><h3>Uusinnat ja lääkärikäynnit</h3><p>Saat muistutuksen ennen kuin resepti loppuu, ja käynnin syy ja muistiinpanot pysyvät tallessa.</p></div>
-        <div class="card"><h3>Haittavaikutukset ja allergiat</h3><p>Kirjaa oireet heti, niin voit näyttää lääkärille, kuinka usein niitä on ollut.</p></div>
-        <div class="card"><h3>Mittaukset</h3><p>Verenpaine, verensokeri, paino ja kipu samassa paikassa lääkkeidesi kanssa.</p></div>
-        <div class="card"><h3>Omaishoitajat mukana</h3><p>Kutsu läheinen koodilla. Jos annos jää ottamatta, hän voi saada ilmoituksen.</p></div>
-        <div class="card"><h3>Päivittäinen ”Olen kunnossa” -kuittaus</h3><p>Valinnainen: yksi napautus päivässä, niin läheiset tietävät, että kaikki on hyvin.</p></div>
+  <main class="wrap home">
+    <section id="miten" aria-labelledby="miten-otsikko">
+      <h2 class="section-title" id="miten-otsikko">Käytössä kolmessa vaiheessa</h2>
+      <ol class="steps">
+        <li><h3>Lisää lääkkeesi</h3><p>Kirjoita ne itse tai lue pakkauksen koodi, niin tiedot täyttyvät.</p></li>
+        <li><h3>Saat muistutuksen, kuittaat annoksen</h3><p>Muistutus tulee jokaisena ottoaikana ja voi toistua, kunnes merkitset annoksen otetuksi.</p></li>
+        <li><h3>Kutsu läheisesi</h3><p>Anna omaishoitajalle kertakäyttöinen koodi. Hän seuraa mukana omasta puhelimestaan.</p></li>
+      </ol>
+    </section>
+
+    <section class="duo" aria-label="Mitä Hoidio tekee sinulle ja läheisillesi">
+      <div class="you">
+        <h3>Sinulle</h3>
+        <ul>
+          <li>Päivän annokset selkeästi järjestyksessä</li>
+          <li>Muistutus ennen kuin resepti loppuu</li>
+          <li>Lääkärikäynnit, haittavaikutukset ja allergiat yhdessä paikassa</li>
+          <li>Verenpaine, verensokeri, paino ja kipu</li>
+          <li>Hätätiedot hoitajalle näytettäväksi, myös ilman verkkoa</li>
+        </ul>
+      </div>
+      <div class="family">
+        <h3>Läheisillesi</h3>
+        <ul>
+          <li>Päivän lääkkeet näkyvät heidän omasta puhelimestaan</li>
+          <li>Ilmoitus, jos annos jää ottamatta</li>
+          <li>Valinnainen päivittäinen ”Olen kunnossa” -kuittaus</li>
+          <li>Päivä-, viikko- tai kuukausiyhteenveto</li>
+          <li>Sinä päätät, mitä he näkevät</li>
+        </ul>
       </div>
     </section>
 
-    <section>
-      <h2>Tehty huolella</h2>
-      <p>Hoidion on suunnitellut laillistettu farmaseutti Suomessa. Sovellus toimii suomeksi, ruotsiksi, englanniksi ja arabiaksi. Tiedot säilytetään EU:ssa, sovelluksessa ei ole mainoksia, eikä tietojasi myydä koskaan.</p>
-      <p class="note">Hoidio auttaa sinua järjestämään terveystietosi. Se ei korvaa lääkärin tai farmaseutin neuvoja.</p>
+    <section class="trust" aria-labelledby="luottamus-otsikko">
+      <div>
+        <h2 class="section-title" id="luottamus-otsikko">Farmaseutin tekemä, tiedot turvassa</h2>
+        <p class="big">Hoidion on suunnitellut laillistettu farmaseutti Suomessa – ihmisille, jotka ottavat monta lääkettä päivässä, ja läheisille, jotka auttavat heitä.</p>
+      </div>
+      <ul class="facts">
+        <li><b>Säilytys EU:ssa.</b> Tietosi säilytetään Frankfurtissa, Saksassa.</li>
+        <li><b>Ei mainoksia, ei myyntiä.</b> Hoidiossa ei ole mainontaa eikä seurantaa.</li>
+        <li><b>Toimii ilman tiliä.</b> Silloin kaikki pysyy puhelimessasi.</li>
+        <li><b>Neljä kieltä.</b> Suomi, ruotsi, englanti ja arabia.</li>
+      </ul>
     </section>
 
-    <section id="tuki">
+    <section id="tuki" class="tuki">
       <div class="doc">
         <h2 style="margin-top:0">Tuki</h2>
         <p class="note">Lähetä sähköpostia osoitteeseen <a href="mailto:support@hoidio.com"><strong>support@hoidio.com</strong></a>. Vastaamme yleensä kahden arkipäivän kuluessa.<br>Hätätilanteessa soita <strong>112</strong>. Hoidio ei voi antaa lääketieteellisiä neuvoja.</p>
@@ -78,6 +125,8 @@
         <p>Tiedot säilytetään EU:ssa, vain sinä ja kutsumasi omaishoitajat näkevät ne, emmekä koskaan myy niitä tai näytä mainoksia. Lue koko <a href="/fi/tietosuoja.html">tietosuojaseloste</a>.</p>
       </div>
     </section>
+
+    <p class="disclaimer">Hoidio auttaa sinua järjestämään terveystietosi. Se ei korvaa lääkärin tai farmaseutin neuvoja.</p>
   </main>
 
   <footer class="site-footer">

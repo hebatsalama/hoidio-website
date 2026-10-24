@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hoidio – medication organizer for seniors and caregivers</title>
-  <meta name="description" content="Hoidio helps seniors keep track of their medicines, refills and doctor visits, and lets family caregivers follow along. Made in Finland by a pharmacist.">
+  <title>Hoidio – medicines on time, family at ease</title>
+  <meta name="description" content="Hoidio reminds you of every dose and lets your family see that you're OK. A medication organizer for seniors and caregivers, designed by a pharmacist in Finland.">
   <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
     <div class="wrap">
       <a class="brand" href="/"><img src="/logo.svg" alt=""><span>Hoid<span class="io">io</span></span></a>
       <nav class="site-nav" aria-label="Main">
-        <a href="/" aria-current="page">Home</a>
+        <a href="#how">How it works</a>
         <a href="/support.html">Support</a>
         <a href="/privacy.html">Privacy</a>
         <a href="/fi/" lang="fi">Suomeksi</a>
@@ -23,30 +26,84 @@
 
   <div class="hero">
     <div class="wrap">
-      <h1>Your medicines, organized and shared with the people who care.</h1>
-      <p>Hoidio reminds you of every dose, keeps your health notes in one place, and lets family caregivers follow along.</p>
-      <span class="badge">Coming soon to the App Store and Google Play</span>
+      <div>
+        <h1><span class="line1">Medicines on time.</span> <span class="line2">Family at ease.</span></h1>
+        <p class="lede">Hoidio reminds you of every dose and lets the people who care about you see that all is well.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#how">See how it works</a>
+          <a class="button ghost" href="/support.html">Ask a question</a>
+        </div>
+        <p class="soon">Coming soon for iPhone and Android.</p>
+      </div>
+
+      <div class="demo" role="img" aria-label="Hoidio on a phone: the 8:00 medicines are ticked as taken, and Sara sees on her own phone that Mum has taken them.">
+        <div class="phone" aria-hidden="true">
+          <div class="phone-top"><strong>Today</strong><span>Tuesday</span></div>
+          <div class="dose done"><span class="time">7:30</span><span class="what"><b>Levothyroxine</b>50 µg · 1 tablet</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="dose done animate"><span class="time">8:00</span><span class="what"><b>Metformin</b>500 mg · with food</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="dose later"><span class="time">14:00</span><span class="what"><b>Vitamin D</b>20 µg · 1 capsule</span><span class="tick"></span></div>
+          <div class="dose later"><span class="time">20:00</span><span class="what"><b>Simvastatin</b>20 mg · 1 tablet</span><span class="tick"></span></div>
+        </div>
+        <div class="toast" aria-hidden="true"><img src="/logo.svg" alt=""><span><b>On Sara's phone</b>Mum has taken her 8:00 medicines.</span></div>
+      </div>
     </div>
   </div>
 
-  <main class="wrap">
-    <section>
-      <h2>What Hoidio does</h2>
-      <div class="grid">
-        <div class="card"><h3>Daily schedule and reminders</h3><p>See today's doses at a glance, with reminders that can repeat so a dose isn't forgotten.</p></div>
-        <div class="card"><h3>Refills and doctor visits</h3><p>Get a reminder before a prescription runs out, and keep the reason and notes for each appointment.</p></div>
-        <div class="card"><h3>Side effects and allergies</h3><p>Log symptoms when they happen and show your doctor how often they occurred.</p></div>
-        <div class="card"><h3>Measurements</h3><p>Keep blood pressure, blood sugar, weight and pain readings together with your medicines.</p></div>
-        <div class="card"><h3>Caregivers in the loop</h3><p>Invite family members with a code. If a dose is missed, they can be alerted.</p></div>
-        <div class="card"><h3>Daily “I'm OK” check</h3><p>Optional: tap once a day so your family knows you're fine.</p></div>
+  <main class="wrap home">
+    <section id="how" aria-labelledby="how-title">
+      <h2 class="section-title" id="how-title">Up and running in three steps</h2>
+      <ol class="steps">
+        <li><h3>Add your medicines</h3><p>Type them in, or scan the code on the box to fill in the details.</p></li>
+        <li><h3>Get reminded, tick it off</h3><p>A reminder comes at each dose time and can repeat until you mark it taken.</p></li>
+        <li><h3>Invite your family</h3><p>Give a caregiver a one-time code. They follow along from their own phone.</p></li>
+      </ol>
+    </section>
+
+    <section class="duo" aria-label="What Hoidio does for you and for your family">
+      <div class="you">
+        <h3>For you</h3>
+        <ul>
+          <li>Today's doses, clearly in order</li>
+          <li>A reminder before a prescription runs out</li>
+          <li>Doctor visits, side effects and allergies in one place</li>
+          <li>Blood pressure, blood sugar, weight and pain readings</li>
+          <li>Emergency information to show a nurse, even offline</li>
+        </ul>
+      </div>
+      <div class="family">
+        <h3>For your family</h3>
+        <ul>
+          <li>See today's medicines from their own phone</li>
+          <li>An alert if a dose is missed</li>
+          <li>An optional daily “I'm OK” check</li>
+          <li>A daily, weekly or monthly summary</li>
+          <li>You decide how much they can see</li>
+        </ul>
       </div>
     </section>
 
-    <section>
-      <h2>Made with care</h2>
-      <p>Hoidio is designed by a licensed pharmacist in Finland. It works in English, Finnish, Swedish and Arabic. Your data is stored in the EU, there are no ads, and your information is never sold.</p>
-      <p class="note">Hoidio helps you organize your health information. It does not replace advice from your doctor or pharmacist.</p>
+    <section class="trust" aria-labelledby="trust-title">
+      <div>
+        <h2 class="section-title" id="trust-title">Made by a pharmacist, kept private</h2>
+        <p class="big">Hoidio was designed by a licensed pharmacist in Finland, for people who take several medicines a day and the families who help them.</p>
+      </div>
+      <ul class="facts">
+        <li><b>Stored in the EU.</b> Your information is kept in Frankfurt, Germany.</li>
+        <li><b>No ads, never sold.</b> Hoidio has no advertising and no tracking.</li>
+        <li><b>Works without an account.</b> Then everything stays on your phone.</li>
+        <li><b>Four languages.</b> Finnish, Swedish, English and Arabic.</li>
+      </ul>
     </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div>
+        <h2 id="closing-title">Coming soon for iPhone and Android</h2>
+        <p>Questions before launch? We're happy to help.</p>
+      </div>
+      <a class="button primary" href="/support.html">Contact support</a>
+    </section>
+
+    <p class="disclaimer">Hoidio helps you organize your health information. It does not replace advice from your doctor or pharmacist.</p>
   </main>
 
   <footer class="site-footer">
