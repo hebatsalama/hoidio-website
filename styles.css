@@ -1,3 +1,9 @@
+/* Fonts are served from this site, so visiting it sends nothing to a font provider. Licences are in /fonts. */
+@font-face { font-family: "Atkinson Hyperlegible Next"; font-weight: 400; font-style: normal; font-display: swap; src: url("/fonts/AtkinsonHyperlegibleNext-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Atkinson Hyperlegible Next"; font-weight: 700; font-style: normal; font-display: swap; src: url("/fonts/AtkinsonHyperlegibleNext-Bold.woff2") format("woff2"); }
+@font-face { font-family: "Bricolage Grotesque"; font-weight: 700; font-style: normal; font-display: swap; src: url("/fonts/BricolageGrotesque-Bold.woff2") format("woff2"); }
+@font-face { font-family: "Bricolage Grotesque"; font-weight: 800; font-style: normal; font-display: swap; src: url("/fonts/BricolageGrotesque-ExtraBold.woff2") format("woff2"); }
+
 :root {
   --pine: #073B37;
   --green: #0B5E57;
@@ -111,7 +117,7 @@ main.home { padding-top: 96px; padding-bottom: 40px; }
 .steps p { margin: 0; color: var(--muted); }
 
 /* For you / for your family */
-.duo { display: grid; grid-template-columns: 1fr 1fr; border-radius: 40px; overflow: hidden; margin-bottom: 104px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; border-radius: 40px; overflow: hidden; margin-bottom: 72px; }
 .duo > div { padding: 44px clamp(24px, 4vw, 52px) 48px; }
 .duo .you { background: var(--white); }
 .duo .family { background: var(--green); color: var(--white); }
@@ -120,6 +126,14 @@ main.home { padding-top: 96px; padding-bottom: 40px; }
 .duo li { padding: 12px 0 12px 34px; position: relative; border-top: 1px solid var(--line); }
 .duo .family li { border-top-color: rgba(255,255,255,.2); }
 .duo li::before { content: ""; position: absolute; left: 0; top: 20px; width: 18px; height: 10px; border-radius: 5px; background: var(--amber); transform: rotate(-45deg); }
+
+/* What it costs */
+.price { margin-bottom: 104px; }
+.price-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+.price-card { background: var(--white); border-radius: 28px; padding: 32px clamp(24px, 3vw, 36px); }
+.price-card h3 { font-family: var(--display); font-size: 25px; line-height: 1.15; letter-spacing: -0.4px; margin: 0 0 6px; }
+.price-card .amount { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 3.6vw, 40px); line-height: 1.1; letter-spacing: -0.8px; color: var(--green); margin: 0 0 10px; }
+.price-card p:last-child { margin-bottom: 0; }
 
 /* Trust */
 .trust { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: start; margin-bottom: 96px; }
@@ -160,7 +174,7 @@ main.wrap.page { padding-top: 48px; padding-bottom: 64px; max-width: 880px; }
 /* ---------- Footer ---------- */
 .site-footer { background: var(--pine); color: #B9DED7; padding: 32px 0 44px; font-size: 16px; }
 .site-footer p { margin: 4px 0; }
-.site-footer a { color: var(--white); }
+.site-footer a { color: var(--white); display: inline-block; padding: 6px 0; }
 
 /* ---------- Smaller screens ---------- */
 @media (max-width: 900px) {
@@ -169,7 +183,7 @@ main.wrap.page { padding-top: 48px; padding-bottom: 64px; max-width: 880px; }
   .demo { width: 280px; }
   .toast { left: -24px; right: -12px; }
   .steps { grid-template-columns: 1fr; }
-  .duo, .trust { grid-template-columns: 1fr; }
+  .duo, .trust, .price-grid { grid-template-columns: 1fr; }
   .trust { gap: 24px; }
 }
 @media (max-width: 600px) {
