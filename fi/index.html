@@ -2,140 +2,254 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Hoidio – lääkkeet ajallaan, läheiset huoletta</title>
   <meta name="description" content="Hoidio muistuttaa jokaisesta annoksesta ja kertoo läheisillesi, että kaikki on hyvin. Lääkemuistio ikääntyville ja omaishoitajille, farmaseutin suunnittelema.">
   <link rel="icon" href="/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/fi/"><img src="/logo.svg" alt=""><span>Hoid<span class="io">io</span></span></a>
-      <nav class="site-nav" aria-label="Päävalikko">
-        <a href="#miten">Näin se toimii</a>
-        <a href="#tuki">Tuki</a>
-        <a href="/fi/tietosuoja.html">Tietosuoja</a>
-        <a href="/" lang="en">English</a>
-      </nav>
+<body><header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/fi/"><img src="/logo.svg" alt=""><span>Hoid<span class="io">io</span></span></a>
+    <nav class="site-nav" aria-label="Päävalikko">
+      <a class="opt" href="/fi/#miten">Näin se toimii</a>
+      <a class="opt" href="/fi/tietosuoja.html">Tietosuoja</a>
+      <a href="/" lang="en">English</a>
+      <a class="nav-cta" href="/fi/#tuki">Tuki</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="flag" aria-hidden="true"></span>Suomalaisen farmaseutin suunnittelema</p>
+      <h1><span>Lääkkeet ajallaan.</span> <span class="line2">Läheiset huoletta.<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C 80 2, 200 2, 296 10"/></svg></span></h1>
+      <p class="lede">Hoidio muistuttaa jokaisesta annoksesta ja näyttää läheisillesi, että kaikki on hyvin.</p>
+      <div class="cta-row">
+        <a class="button primary" href="#miten">Katso, miten se toimii <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="button ghost" href="#tuki">Kysy meiltä</a>
+      </div>
+      <div class="stores">
+        <span class="label">Tulossa pian:</span>
+        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="18" width="4" height="1.6" rx=".8"/></svg>iPhone</span>
+        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="9" y="4.5" width="6" height="1.6" rx=".8"/></svg>Android</span>
+      </div>
     </div>
-  </header>
 
-  <div class="hero">
-    <div class="wrap">
-      <div>
-        <h1><span class="line1">Lääkkeet ajallaan.</span> <span class="line2">Läheiset huoletta.</span></h1>
-        <p class="lede">Hoidio muistuttaa jokaisesta annoksesta ja näyttää läheisillesi, että kaikki on hyvin.</p>
-        <div class="cta-row">
-          <a class="button primary" href="#miten">Katso, miten se toimii</a>
-          <a class="button ghost" href="#tuki">Kysy meiltä</a>
-        </div>
-        <p class="soon">Tulossa pian iPhoneen ja Androidiin.</p>
+    <div class="demo" role="img" aria-label="Hoidio kahdessa puhelimessa: äiti kuittaa klo 8.00 Metformiinin otetuksi, ja tytär Sara näkee sen heti omasta puhelimestaan.">
+      <div class="phone you" aria-hidden="true">
+        <div class="phone-top"><strong>Tänään</strong><span>tiistai</span></div>
+        <div class="dose done"><span class="time">7.30</span><span class="what"><b>Levotyroksiini</b>50 µg · 1 tabletti</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <div class="dose done animate"><span class="time">8.00</span><span class="what"><b>Metformiini</b>500 mg · ruoan kanssa</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <div class="dose later"><span class="time">14.00</span><span class="what"><b>D-vitamiini</b>20 µg · 1 kapseli</span><span class="tick"></span></div>
+        <div class="dose later"><span class="time">20.00</span><span class="what"><b>Simvastatiini</b>20 mg · 1 tabletti</span><span class="tick"></span></div>
       </div>
-
-      <div class="demo" role="img" aria-label="Hoidio puhelimessa: klo 8.00 lääkkeet merkitään otetuiksi, ja Sara näkee omasta puhelimestaan, että äiti on ottanut ne.">
-        <div class="phone" aria-hidden="true">
-          <div class="phone-top"><strong>Tänään</strong><span>tiistai</span></div>
-          <div class="dose done"><span class="time">7.30</span><span class="what"><b>Levotyroksiini</b>50 µg · 1 tabletti</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <div class="dose done animate"><span class="time">8.00</span><span class="what"><b>Metformiini</b>500 mg · ruoan kanssa</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <div class="dose later"><span class="time">14.00</span><span class="what"><b>D-vitamiini</b>20 µg · 1 kapseli</span><span class="tick"></span></div>
-          <div class="dose later"><span class="time">20.00</span><span class="what"><b>Simvastatiini</b>20 mg · 1 tabletti</span><span class="tick"></span></div>
+      <div class="phone family" aria-hidden="true">
+        <div class="fam-head"><span class="avatar">Ä</span><span><b>Äiti</b><span>Saran puhelimessa</span></span></div>
+        <div class="ring-wrap">
+          <svg class="ring" viewBox="0 0 54 54"><circle class="track" cx="27" cy="27" r="22"/><circle class="val" cx="27" cy="27" r="22"/></svg>
+          <p><b>2 / 4</b>annosta otettu tänään</p>
         </div>
-        <div class="toast" aria-hidden="true"><img src="/logo.svg" alt=""><span><b>Saran puhelimessa</b>Äiti on ottanut klo 8 lääkkeensä.</span></div>
+        <div class="fam-row new"><span class="dot"></span><span><b>8.00</b> Metformiini otettu</span></div>
+        <div class="fam-row ok"><span class="dot"></span><span><b>”Olen kunnossa”</b> kuitattu</span></div>
       </div>
+      <div class="toast" aria-hidden="true"><img src="/logo.svg" alt=""><span><b>Saran puhelimessa</b>Äiti on ottanut klo 8 lääkkeensä.</span></div>
     </div>
   </div>
+</div>
 
-  <main class="wrap home">
-    <section id="miten" aria-labelledby="miten-otsikko">
-      <h2 class="section-title" id="miten-otsikko">Käytössä kolmessa vaiheessa</h2>
-      <ol class="steps">
-        <li><h3>Lisää lääkkeesi</h3><p>Kirjoita jokainen lääke, sen annos ja ottoajat.</p></li>
-        <li><h3>Saat muistutuksen, kuittaat annoksen</h3><p>Muistutus tulee jokaisena ottoaikana ja voi toistua, kunnes merkitset annoksen otetuksi.</p></li>
-        <li><h3>Kutsu läheisesi</h3><p>Anna omaishoitajalle kertakäyttöinen koodi. Hän seuraa mukana omasta puhelimestaan.</p></li>
-      </ol>
-    </section>
+<div class="ribbon" aria-label="Hoidion lupaukset">
+  <div class="ribbon-track">
+    <ul>
+      <li>Säilytys EU:ssa</li><li>Ei mainoksia, ei myyntiä</li><li>Ei seurantaa</li><li>Toimii ilman tiliä</li><li>Hätätiedot myös ilman verkkoa</li><li>Neljä kieltä</li>
+    </ul>
+    <ul aria-hidden="true">
+      <li>Säilytys EU:ssa</li><li>Ei mainoksia, ei myyntiä</li><li>Ei seurantaa</li><li>Toimii ilman tiliä</li><li>Hätätiedot myös ilman verkkoa</li><li>Neljä kieltä</li>
+    </ul>
+  </div>
+</div>
 
-    <section class="duo" aria-label="Mitä Hoidio tekee sinulle ja läheisillesi">
-      <div class="you">
-        <h3>Sinulle</h3>
+<main class="wrap">
+  <section id="miten" class="block" aria-labelledby="miten-otsikko">
+    <p class="kicker">Näin se toimii</p>
+    <h2 class="section-title" id="miten-otsikko">Käytössä kolmessa vaiheessa</h2>
+    <p class="section-intro">Ei paksuja käyttöohjeita. Ota Hoidio käyttöön kerran, niin se hoitaa loput.</p>
+    <ol class="steps">
+      <li>
+        <span class="num">Vaihe</span>
+        <h3>Lisää lääkkeesi</h3>
+        <p>Kirjoita jokainen lääke, sen annos ja ottoajat.</p>
+        <div class="vignette" aria-hidden="true">
+          <div class="mini"><div class="field">Metformiini <span>500 mg</span></div><div class="chips"><span>8.00</span><span>20.00</span><span>ruoan kanssa</span></div></div>
+        </div>
+      </li>
+      <li>
+        <span class="num">Vaihe</span>
+        <h3>Saat muistutuksen, kuittaat annoksen</h3>
+        <p>Muistutus tulee jokaisena ottoaikana ja voi toistua, kunnes merkitset annoksen otetuksi.</p>
+        <div class="vignette" aria-hidden="true">
+          <div class="mini notif"><img src="/logo.svg" alt=""><div><b>Metformiinin aika</b>8.00 · 500 mg</div><span class="btn">Otettu</span></div>
+        </div>
+      </li>
+      <li>
+        <span class="num">Vaihe</span>
+        <h3>Kutsu läheisesi</h3>
+        <p>Anna omaishoitajalle kertakäyttöinen koodi. Hän seuraa mukana omasta puhelimestaan.</p>
+        <div class="vignette" aria-hidden="true">
+          <div class="code"><span>4</span><span>8</span><span>2</span><span class="gap"></span><span>9</span><span>1</span><span>3</span></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block" aria-labelledby="kenelle-otsikko">
+    <p class="kicker">Kaksi näkymää, yksi sovellus</p>
+    <h2 class="section-title" id="kenelle-otsikko">Sinulle, joka otat lääkkeet, ja läheisille, jotka välittävät</h2>
+    <div class="switcher">
+      <div class="tabs" role="tablist" aria-label="Kenelle">
+        <button role="tab" id="tab-you" aria-controls="panel-you" aria-selected="true">Sinulle</button>
+        <button role="tab" id="tab-family" aria-controls="panel-family" aria-selected="false" tabindex="-1">Läheisillesi</button>
+      </div>
+      <div class="panel" id="panel-you" role="tabpanel" aria-labelledby="tab-you">
+        <div>
+          <h3>Päiväsi selkeästi järjestyksessä.</h3>
+          <p class="sub">Lääkkeet ja terveystiedot yhdessä rauhallisessa paikassa, isolla tekstillä ja selkeillä painikkeilla.</p>
+        </div>
         <ul>
-          <li>Päivän annokset selkeästi järjestyksessä</li>
-          <li>Muistutus ennen kuin resepti loppuu</li>
-          <li>Lääkärikäynnit, haittavaikutukset ja allergiat yhdessä paikassa</li>
-          <li>Verenpaine, verensokeri, paino ja kipu</li>
-          <li>Hätätiedot hoitajalle näytettäväksi, myös ilman verkkoa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Päivän annokset selkeästi järjestyksessä</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>Muistutus ennen kuin resepti loppuu</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Lääkärikäynnit, haittavaikutukset ja allergiat yhdessä paikassa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg>Verenpaine, verensokeri, paino ja kipu</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M12 9v6M9 12h6"/></svg>Hätätiedot hoitajalle näytettäväksi, myös ilman verkkoa</li>
         </ul>
       </div>
-      <div class="family">
-        <h3>Läheisillesi</h3>
+      <div class="panel family-panel" id="panel-family" role="tabpanel" aria-labelledby="tab-family" hidden>
+        <div>
+          <h3>Mielenrauhaa, missä ikinä oletkin.</h3>
+          <p class="sub">Seuraa omasta puhelimestasi ilman, että sinun tarvitsee soittaa joka aamu ja kysyä.</p>
+        </div>
         <ul>
-          <li>Päivän lääkkeet näkyvät heidän omasta puhelimestaan</li>
-          <li>Ilmoitus, jos annos jää ottamatta</li>
-          <li>Valinnainen päivittäinen ”Olen kunnossa” -kuittaus</li>
-          <li>Päivä-, viikko- tai kuukausiyhteenveto</li>
-          <li>Sinä päätät, mitä he näkevät</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 6h4"/><path d="M9.5 13l2 2 3.5-4"/></svg>Päivän lääkkeet näkyvät heidän omasta puhelimestaan</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.5 17.5A2 2 0 0 0 4.2 20.5h15.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Ilmoitus, jos annos jää ottamatta</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>Valinnainen päivittäinen ”Olen kunnossa” -kuittaus</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Päivä-, viikko- tai kuukausiyhteenveto</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Sinä päätät, mitä he näkevät</li>
         </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="trust" aria-labelledby="luottamus-otsikko">
-      <div>
-        <h2 class="section-title" id="luottamus-otsikko">Farmaseutin tekemä, tiedot turvassa</h2>
-        <p class="big">Hoidion on suunnitellut laillistettu farmaseutti Suomessa – ihmisille, jotka ottavat monta lääkettä päivässä, ja läheisille, jotka auttavat heitä.</p>
+  <section class="block trust" aria-labelledby="luottamus-otsikko">
+    <div>
+      <p class="kicker">Kuka Hoidion takana on</p>
+      <h2 class="section-title" id="luottamus-otsikko">Farmaseutin tekemä, tiedot turvassa</h2>
+      <p class="big">Hoidion on suunnitellut laillistettu farmaseutti Suomessa – ihmisille, jotka ottavat monta lääkettä päivässä, ja läheisille, jotka auttavat heitä.</p>
+      <div class="label-slip" aria-label="Hoidio apteekin annosetikettinä">
+        <div class="slip-top"><span class="rx">Rx · Hoidio</span><img src="/logo.svg" alt=""></div>
+        <dl>
+          <dt>Kenelle</dt><dd>Monta lääkettä päivässä ottaville</dd>
+          <dt>Ja</dt><dd>Läheisille, jotka auttavat</dd>
+          <dt>Annos</dt><dd>Jokainen, ajallaan</dd>
+          <dt>Mistä</dt><dd>Espoosta</dd>
+        </dl>
+        <p class="warn">Hoidio auttaa sinua järjestämään terveystietosi. Se ei korvaa lääkärin tai farmaseutin neuvoja.</p>
       </div>
-      <ul class="facts">
-        <li><b>Säilytys EU:ssa.</b> Tietosi säilytetään Frankfurtissa, Saksassa.</li>
-        <li><b>Ei mainoksia, ei myyntiä.</b> Hoidiossa ei ole mainontaa eikä seurantaa.</li>
-        <li><b>Toimii ilman tiliä.</b> Silloin kaikki pysyy puhelimessasi.</li>
-        <li><b>Neljä kieltä.</b> Suomi, ruotsi, englanti ja arabia.</li>
-      </ul>
-    </section>
+    </div>
+    <ul class="facts">
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><b>Säilytys EU:ssa</b><p>Tietosi säilytetään Frankfurtissa, Saksassa.</p></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span><b>Ei mainoksia, ei myyntiä</b><p>Hoidiossa ei ole mainontaa eikä seurantaa.</p></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></span><b>Toimii ilman tiliä</b><p>Silloin kaikki pysyy puhelimessasi.</p></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c0 4-3 7-6 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span><b>Neljä kieltä</b>
+        <div class="langs"><span lang="fi">Suomi</span><span lang="sv">Svenska</span><span lang="en">English</span><span lang="ar" dir="rtl">العربية</span></div></li>
+    </ul>
+  </section>
 
-    <section id="tuki" class="tuki">
-      <div class="doc">
-        <h2 style="margin-top:0">Tuki</h2>
-        <p class="note">Lähetä sähköpostia osoitteeseen <a href="mailto:support@hoidio.com"><strong>support@hoidio.com</strong></a>. Vastaamme yleensä kahden arkipäivän kuluessa.<br>Hätätilanteessa soita <strong>112</strong>. Hoidio ei voi antaa lääketieteellisiä neuvoja.</p>
-
-        <h3>Tarvitsenko tilin?</h3>
+  <section id="tuki" class="block faq" aria-labelledby="tuki-otsikko">
+    <div>
+      <p class="kicker">Kysymyksiä</p>
+      <h2 class="section-title" id="tuki-otsikko">Tuki</h2>
+      <p class="note">Lähetä sähköpostia osoitteeseen <a href="mailto:support@hoidio.com"><strong>support@hoidio.com</strong></a>. Vastaamme yleensä kahden arkipäivän kuluessa.<br>Hätätilanteessa soita <strong>112</strong>. Hoidio ei voi antaa lääketieteellisiä neuvoja.</p>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>Tarvitsenko tilin?</summary>
         <p>Et. Ilman tiliä kaikki tiedot pysyvät vain puhelimessasi. Tilin avulla tiedot varmuuskopioidaan ja voit jakaa ne omaishoitajalle.</p>
-
-        <h3>Miten kirjaudun?</h3>
+      </details>
+      <details>
+        <summary>Miten kirjaudun?</summary>
         <p>Valitse <strong>Lisää → Oma tili</strong> ja kirjoita sähköpostiosoitteesi. Lähetämme 6-numeroisen koodin, jonka kirjoitat sovellukseen. Salasanaa ei tarvita.</p>
-
-        <h3>Koodi ei tullut</h3>
+      </details>
+      <details>
+        <summary>Koodi ei tullut</summary>
         <p>Odota hetki ja tarkista roskapostikansio. Viesti tulee lähettäjältä <em>Hoidio &lt;noreply@hoidio.com&gt;</em>. Koodi toimii vain kerran ja lyhyen aikaa, joten pyydä tarvittaessa uusi.</p>
-
-        <h3>En saa muistutuksia</h3>
+      </details>
+      <details>
+        <summary>En saa muistutuksia</summary>
         <p>Tarkista, että Hoidion ilmoitukset on sallittu puhelimen asetuksista ja että muistutukset ovat päällä kohdassa <strong>Lisää → Muistutukset ja asetukset</strong>. Muistutukset toimivat puhelimen sovelluksessa, eivät verkkoselaimessa.</p>
-
-        <h3>Miten lisään omaishoitajan?</h3>
+      </details>
+      <details>
+        <summary>Miten lisään omaishoitajan?</summary>
         <p>Valitse <strong>Lisää → Jaa omaishoitajalle</strong> ja luo koodi. Omaishoitaja kirjoittaa sen omaan Hoidio-sovellukseensa kohtaan ”Hoidettavani”. Koodi toimii kerran, 48 tunnin ajan. Valitset itse, näkeekö hän kaiken vai vain lääkeaikataulun.</p>
-
-        <h3>Miten poistan omaishoitajan?</h3>
+      </details>
+      <details>
+        <summary>Miten poistan omaishoitajan?</summary>
         <p>Avaa <strong>Lisää → Jaa omaishoitajalle</strong> ja poista henkilö. Hän menettää pääsyn heti.</p>
-
-        <h3 id="poista-tili">Miten poistan tilini ja tietoni?</h3>
+      </details>
+      <details id="poista-tili">
+        <summary>Miten poistan tilini ja tietoni?</summary>
         <p>Valitse sovelluksessa <strong>Lisää → Oma tili</strong> ja napauta <strong>Poista tilini</strong>. Tilisi, siihen tallennetut tiedot ja omaishoitajayhteydet poistetaan heti. Poistoa ei voi perua.</p>
         <p>Puhelimessa olevat tiedot säilyvät, joten voit jatkaa Hoidion käyttöä ilman tiliä. Voit poistaa nekin kohdasta <strong>Lisää → Muistutukset ja asetukset → Poista kaikki tietoni</strong> tai poistamalla sovelluksen.</p>
         <p>Jos et pääse sovellukseen, lähetä tilisi sähköpostiosoitteesta viesti osoitteeseen <a href="mailto:support@hoidio.com">support@hoidio.com</a>, niin poistamme tilisi 30 päivän kuluessa.</p>
-
-        <h3>Ovatko tietoni turvassa?</h3>
+      </details>
+      <details>
+        <summary>Ovatko tietoni turvassa?</summary>
         <p>Tiedot säilytetään EU:ssa, vain sinä ja kutsumasi omaishoitajat näkevät ne, emmekä koskaan myy niitä tai näytä mainoksia. Lue koko <a href="/fi/tietosuoja.html">tietosuojaseloste</a>.</p>
-      </div>
-    </section>
-
-    <p class="disclaimer">Hoidio auttaa sinua järjestämään terveystietosi. Se ei korvaa lääkärin tai farmaseutin neuvoja.</p>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© 2026 Laryngology Courses Oy (Y-tunnus <span class="nowrap">3421195-7</span>), Espoo</p>
-      <p><a href="#tuki">Tuki</a> · <a href="/fi/tietosuoja.html">Tietosuojaseloste</a> · <a href="/fi/kayttoehdot.html">Käyttöehdot</a> · <a href="mailto:support@hoidio.com">support@hoidio.com</a></p>
+      </details>
     </div>
-  </footer>
+  </section>
+
+  <section class="closing" aria-labelledby="loppu-otsikko">
+    <div>
+      <h2 id="loppu-otsikko">Tulossa pian iPhoneen ja Androidiin</h2>
+      <p>Kysyttävää ennen julkaisua? Autamme mielellämme.</p>
+    </div>
+    <a class="button primary" href="mailto:support@hoidio.com">Lähetä viesti <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </section>
+
+  <p class="disclaimer">Hoidio auttaa sinua järjestämään terveystietosi. Se ei korvaa lääkärin tai farmaseutin neuvoja.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Laryngology Courses Oy (Y-tunnus <span class="nowrap">3421195-7</span>), Espoo</p>
+    <p><a href="/fi/#tuki">Tuki</a> · <a href="/fi/tietosuoja.html">Tietosuojaseloste</a> · <a href="/fi/kayttoehdot.html">Käyttöehdot</a> · <a href="mailto:support@hoidio.com">support@hoidio.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(tab) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { select(tab); });
+    tab.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      select(next); next.focus();
+    });
+  });
+})();
+</script>
 </body>
 </html>
