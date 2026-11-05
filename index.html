@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Hoidio – medicines on time, family at ease</title>
   <meta name="description" content="Hoidio reminds you of every dose and lets your family see that you're OK. A medication organizer for seniors and caregivers, designed by a pharmacist in Finland.">
   <link rel="icon" href="/logo.svg" type="image/svg+xml">
@@ -19,123 +19,249 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/"><img src="/logo.svg" alt=""><span>Hoid<span class="io">io</span></span></a>
-      <nav class="site-nav" aria-label="Main">
-        <a href="#how">How it works</a>
-        <a href="#price">Price</a>
-        <a href="/support.html">Support</a>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/fi/" lang="fi">Suomeksi</a>
-      </nav>
+<body><header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/logo.svg" alt=""><span>Hoid<span class="io">io</span></span></a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="opt" href="/#how">How it works</a>
+      <a class="opt" href="/#price">Price</a>
+      <a class="opt" href="/#faq">Questions</a>
+      <a href="/fi/" lang="fi">Suomeksi</a>
+      <a class="nav-cta" href="/support.html">Contact us</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="flag" aria-hidden="true"></span>Designed by a pharmacist in Finland</p>
+      <h1><span>Medicines on time.</span> <span class="line2">Family at ease.<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C 80 2, 200 2, 296 10"/></svg></span></h1>
+      <p class="lede">Hoidio reminds you of every dose and lets the people who care about you see that all is well.</p>
+      <div class="cta-row">
+        <a class="button primary" href="#how">See how it works <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="button ghost" href="/support.html">Ask a question</a>
+      </div>
+      <div class="stores">
+        <span class="label">Coming soon for</span>
+        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="18" width="4" height="1.6" rx=".8"/></svg>iPhone</span>
+        <span class="store"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="9" y="4.5" width="6" height="1.6" rx=".8"/></svg>Android</span>
+      </div>
     </div>
-  </header>
 
-  <div class="hero">
-    <div class="wrap">
-      <div>
-        <h1><span class="line1">Medicines on time.</span> <span class="line2">Family at ease.</span></h1>
-        <p class="lede">Hoidio reminds you of every dose and lets the people who care about you see that all is well.</p>
-        <div class="cta-row">
-          <a class="button primary" href="#how">See how it works</a>
-          <a class="button ghost" href="/support.html">Ask a question</a>
-        </div>
-        <p class="soon">Coming soon for iPhone and Android.</p>
+    <div class="demo" role="img" aria-label="Hoidio on two phones: Mum ticks her 8:00 Metformin as taken, and her daughter Sara sees it on her own phone straight away.">
+      <div class="phone you" aria-hidden="true">
+        <div class="phone-top"><strong>Today</strong><span>Tuesday</span></div>
+        <div class="dose done"><span class="time">7:30</span><span class="what"><b>Levothyroxine</b>50 µg · 1 tablet</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <div class="dose done animate"><span class="time">8:00</span><span class="what"><b>Metformin</b>500 mg · with food</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <div class="dose later"><span class="time">14:00</span><span class="what"><b>Vitamin D</b>20 µg · 1 capsule</span><span class="tick"></span></div>
+        <div class="dose later"><span class="time">20:00</span><span class="what"><b>Simvastatin</b>20 mg · 1 tablet</span><span class="tick"></span></div>
       </div>
-
-      <div class="demo" role="img" aria-label="Hoidio on a phone: the 8:00 medicines are ticked as taken, and Sara sees on her own phone that Mum has taken them.">
-        <div class="phone" aria-hidden="true">
-          <div class="phone-top"><strong>Today</strong><span>Tuesday</span></div>
-          <div class="dose done"><span class="time">7:30</span><span class="what"><b>Levothyroxine</b>50 µg · 1 tablet</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <div class="dose done animate"><span class="time">8:00</span><span class="what"><b>Metformin</b>500 mg · with food</span><span class="tick"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <div class="dose later"><span class="time">14:00</span><span class="what"><b>Vitamin D</b>20 µg · 1 capsule</span><span class="tick"></span></div>
-          <div class="dose later"><span class="time">20:00</span><span class="what"><b>Simvastatin</b>20 mg · 1 tablet</span><span class="tick"></span></div>
+      <div class="phone family" aria-hidden="true">
+        <div class="fam-head"><span class="avatar">M</span><span><b>Mum</b><span>Seen from Sara's phone</span></span></div>
+        <div class="ring-wrap">
+          <svg class="ring" viewBox="0 0 54 54"><circle class="track" cx="27" cy="27" r="22"/><circle class="val" cx="27" cy="27" r="22"/></svg>
+          <p><b>2 of 4</b>doses taken today</p>
         </div>
-        <div class="toast" aria-hidden="true"><img src="/logo.svg" alt=""><span><b>On Sara's phone</b>Mum has taken her 8:00 medicines.</span></div>
+        <div class="fam-row new"><span class="dot"></span><span><b>8:00</b> Metformin taken</span></div>
+        <div class="fam-row ok"><span class="dot"></span><span><b>“I'm OK”</b> checked in</span></div>
       </div>
+      <div class="toast" aria-hidden="true"><img src="/logo.svg" alt=""><span><b>On Sara's phone</b>Mum has taken her 8:00 medicines.</span></div>
     </div>
   </div>
+</div>
 
-  <main class="wrap home">
-    <section id="how" aria-labelledby="how-title">
-      <h2 class="section-title" id="how-title">Up and running in three steps</h2>
-      <ol class="steps">
-        <li><h3>Add your medicines</h3><p>Type in each medicine with its dose and the times you take it.</p></li>
-        <li><h3>Get reminded, tick it off</h3><p>A reminder comes at each dose time and can repeat until you mark it taken.</p></li>
-        <li><h3>Invite your family</h3><p>Give a caregiver a one-time code. They follow along from their own phone with a caregiver subscription. The first month is free.</p></li>
-      </ol>
-    </section>
+<div class="ribbon" aria-label="Hoidio promises">
+  <div class="ribbon-track">
+    <ul>
+      <li>Stored in the EU</li><li>No ads, never sold</li><li>No tracking</li><li>Works without an account</li><li>Emergency info, even offline</li><li>Four languages</li>
+    </ul>
+    <ul aria-hidden="true">
+      <li>Stored in the EU</li><li>No ads, never sold</li><li>No tracking</li><li>Works without an account</li><li>Emergency info, even offline</li><li>Four languages</li>
+    </ul>
+  </div>
+</div>
 
-    <section class="duo" aria-label="What Hoidio does for you and for your family">
-      <div class="you">
-        <h3>For you</h3>
+<main class="wrap">
+  <section id="how" class="block" aria-labelledby="how-title">
+    <p class="kicker">How it works</p>
+    <h2 class="section-title" id="how-title">Up and running in three steps</h2>
+    <p class="section-intro">No manuals, no small print. Set it up once at the kitchen table and Hoidio takes it from there.</p>
+    <ol class="steps">
+      <li>
+        <span class="num">Step</span>
+        <h3>Add your medicines</h3>
+        <p>Type in each medicine with its dose and the times you take it.</p>
+        <div class="vignette" aria-hidden="true">
+          <div class="mini"><div class="field">Metformin <span>500 mg</span></div><div class="chips"><span>8:00</span><span>20:00</span><span>with food</span></div></div>
+        </div>
+      </li>
+      <li>
+        <span class="num">Step</span>
+        <h3>Get reminded, tick it off</h3>
+        <p>A reminder comes at each dose time and can repeat until you mark it taken.</p>
+        <div class="vignette" aria-hidden="true">
+          <div class="mini notif"><img src="/logo.svg" alt=""><div><b>Time for Metformin</b>8:00 · 500 mg</div><span class="btn">Taken</span></div>
+        </div>
+      </li>
+      <li>
+        <span class="num">Step</span>
+        <h3>Invite your family</h3>
+        <p>Give a caregiver a one-time code. They follow along from their own phone with Hoidio Family. The first 14 days are free.</p>
+        <div class="vignette" aria-hidden="true">
+          <div class="code"><span>4</span><span>8</span><span>2</span><span class="gap"></span><span>9</span><span>1</span><span>3</span></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block" aria-labelledby="who-title">
+    <p class="kicker">Two sides, one app</p>
+    <h2 class="section-title" id="who-title">Built for the person taking the pills, and the people who worry</h2>
+    <div class="switcher">
+      <div class="tabs" role="tablist" aria-label="Who is it for">
+        <button role="tab" id="tab-you" aria-controls="panel-you" aria-selected="true">For you</button>
+        <button role="tab" id="tab-family" aria-controls="panel-family" aria-selected="false" tabindex="-1">For your family</button>
+      </div>
+      <div class="panel" id="panel-you" role="tabpanel" aria-labelledby="tab-you">
+        <div>
+          <h3>Your day, clearly in order.</h3>
+          <p class="sub">Everything about your medicines and health in one calm place, with big text and clear buttons.</p>
+        </div>
         <ul>
-          <li>Today's doses, clearly in order</li>
-          <li>A reminder before a prescription runs out</li>
-          <li>Doctor visits, side effects and allergies in one place</li>
-          <li>Blood pressure, blood sugar, weight and pain readings</li>
-          <li>Emergency information to show a nurse, even offline</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Today's doses, clearly in order</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>A reminder before a prescription runs out</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Doctor visits, side effects and allergies in one place</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg>Blood pressure, blood sugar, weight and pain readings</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M12 9v6M9 12h6"/></svg>Emergency information to show a nurse, even offline</li>
         </ul>
       </div>
-      <div class="family">
-        <h3>For your family</h3>
+      <div class="panel family-panel" id="panel-family" role="tabpanel" aria-labelledby="tab-family" hidden>
+        <div>
+          <h3>Peace of mind, from wherever you are.</h3>
+          <p class="sub">Follow along from your own phone without calling every morning to ask.</p>
+        </div>
         <ul>
-          <li>See today's medicines from their own phone</li>
-          <li>An alert if a dose is missed</li>
-          <li>An optional daily “I'm OK” check</li>
-          <li>A daily, weekly or monthly summary</li>
-          <li>You decide how much they can see</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 6h4"/><path d="M9.5 13l2 2 3.5-4"/></svg>See today's medicines from their own phone</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.5 17.5A2 2 0 0 0 4.2 20.5h15.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>An alert if a reminder isn't confirmed</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>An optional daily “I'm OK” check</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>A daily, weekly or monthly summary</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>You decide how much they can see</li>
         </ul>
       </div>
-    </section>
-
-    <section class="price" id="price" aria-labelledby="price-title">
-      <h2 class="section-title" id="price-title">Free for you. A small fee for those who follow.</h2>
-      <div class="price-grid">
-        <div class="price-card">
-          <h3>For you</h3>
-          <p class="amount">Free</p>
-          <p>Everything for your own medicines, and inviting your family, costs nothing.</p>
-        </div>
-        <div class="price-card">
-          <h3>For a caregiver</h3>
-          <p class="amount">€3.99 a month</p>
-          <p>Or €29.99 a year. The first month is free, and one subscription follows up to three people. Bought in the app through the App Store or Google Play. Cancel at any time in your Apple or Google account.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust" aria-labelledby="trust-title">
-      <div>
-        <h2 class="section-title" id="trust-title">Made by a pharmacist, kept private</h2>
-        <p class="big">Hoidio was designed by a licensed pharmacist in Finland, for people who take several medicines a day and the families who help them.</p>
-      </div>
-      <ul class="facts">
-        <li><b>Stored in the EU.</b> Your information is kept in Frankfurt, Germany.</li>
-        <li><b>No ads, never sold.</b> Hoidio has no advertising and no tracking.</li>
-        <li><b>Works without an account.</b> Then everything stays on your phone.</li>
-        <li><b>Four languages.</b> Finnish, Swedish, English and Arabic.</li>
-      </ul>
-    </section>
-
-    <section class="closing" aria-labelledby="closing-title">
-      <div>
-        <h2 id="closing-title">Coming soon for iPhone and Android</h2>
-        <p>Questions before launch? We're happy to help.</p>
-      </div>
-      <a class="button primary" href="/support.html">Contact support</a>
-    </section>
-
-    <p class="disclaimer">Hoidio helps you organize your health information. It does not replace advice from your doctor or pharmacist.</p>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© 2026 Laryngology Courses Oy (Business ID <span class="nowrap">3421195-7</span>), Munkkiluodonkuja 6 A 2, 02160 Espoo, Finland</p>
-      <p><a href="/support.html">Support</a> · <a href="/privacy.html">Privacy policy</a> · <a href="/terms.html">Terms of use</a> · <a href="mailto:support@hoidio.com">support@hoidio.com</a></p>
     </div>
-  </footer>
+  </section>
+
+  <section id="price" class="block price" aria-labelledby="price-title">
+    <p class="kicker">What it costs</p>
+    <h2 class="section-title" id="price-title">Free for you. One plan for the family.</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>For you</h3>
+        <p class="amount">Free</p>
+        <p>Everything for your own medicines is free, and so is inviting your family.</p>
+      </div>
+      <div class="price-card">
+        <h3>Hoidio Family, for caregivers</h3>
+        <p class="amount">€4.99 a month</p>
+        <p>Or €49.99 a year, and the first 14 days are free. One caregiver buys it, and it covers up to two people and three caregivers in total. Bought in the app through the App Store or Google Play. Cancel at any time in your Apple or Google account.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block trust" aria-labelledby="trust-title">
+    <div>
+      <p class="kicker">Who's behind it</p>
+      <h2 class="section-title" id="trust-title">Made by a pharmacist, kept private</h2>
+      <p class="big">Hoidio was designed by a licensed pharmacist in Finland, for people who take several medicines a day and the families who help them.</p>
+      <div class="label-slip" aria-label="Hoidio summarised as a pharmacy label">
+        <div class="slip-top"><span class="rx">Rx · Hoidio</span><img src="/logo.svg" alt=""></div>
+        <dl>
+          <dt>For</dt><dd>People on several medicines a day</dd>
+          <dt>And</dt><dd>The families who help them</dd>
+          <dt>Dose</dt><dd>Every one, on time</dd>
+          <dt>From</dt><dd>Espoo, Finland</dd>
+        </dl>
+        <p class="warn">Hoidio helps you organize your health information. It does not replace advice from your doctor or pharmacist.</p>
+      </div>
+    </div>
+    <ul class="facts">
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><b>Stored in the EU</b><p>Your information is kept in Frankfurt, Germany.</p></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span><b>No ads, never sold</b><p>Hoidio has no advertising and no tracking.</p></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></span><b>Works without an account</b><p>Then everything stays on your phone.</p></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c0 4-3 7-6 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span><b>Four languages</b>
+        <div class="langs"><span lang="fi">Suomi</span><span lang="sv">Svenska</span><span lang="en">English</span><span lang="ar" dir="rtl">العربية</span></div></li>
+    </ul>
+  </section>
+
+  <section id="faq" class="block faq" aria-labelledby="faq-title">
+    <div>
+      <p class="kicker">Questions</p>
+      <h2 class="section-title" id="faq-title">Good to know</h2>
+      <p class="section-intro">Something else on your mind? <a href="/support.html">Ask us directly</a>.</p>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>Do I need to create an account?</summary>
+        <p>No. Hoidio works without an account, and then everything stays on your phone.</p>
+      </details>
+      <details>
+        <summary>Where is my information kept?</summary>
+        <p>In the EU, in Frankfurt, Germany. Hoidio has no advertising and no tracking, and your information is never sold.</p>
+      </details>
+      <details>
+        <summary>What if I forget to take a dose?</summary>
+        <p>The reminder can repeat until you mark the dose taken. If you've invited family, they can get an alert when a reminder isn't confirmed.</p>
+      </details>
+      <details>
+        <summary>Can my family see everything?</summary>
+        <p>Only what you choose. You decide how much a caregiver can see, and they join with a one-time code you give them.</p>
+      </details>
+      <details>
+        <summary>When can I download it?</summary>
+        <p>Hoidio is coming soon for iPhone and Android, in Finnish, Swedish, English and Arabic.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <div>
+      <h2 id="closing-title">Coming soon for iPhone and Android</h2>
+      <p>Questions before launch? We're happy to help.</p>
+    </div>
+    <a class="button primary" href="/support.html">Contact support <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </section>
+
+  <p class="disclaimer">Hoidio helps you organize your health information. It does not replace advice from your doctor or pharmacist.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Laryngology Courses Oy (Business ID <span class="nowrap">3421195-7</span>), Munkkiluodonkuja 6 A 2, 02160 Espoo, Finland</p>
+    <p><a href="/support.html">Support</a> · <a href="/privacy.html">Privacy policy</a> · <a href="/terms.html">Terms of use</a> · <a href="mailto:support@hoidio.com">support@hoidio.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(tab) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { select(tab); });
+    tab.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      select(next); next.focus();
+    });
+  });
+})();
+</script>
 </body>
 </html>
