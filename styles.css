@@ -51,6 +51,7 @@ body {
 }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--pine); }
 a { color: var(--accent); text-underline-offset: 3px; }
+a[href^="mailto:"] { overflow-wrap: anywhere; }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--amber-deep); outline-offset: 3px; border-radius: 10px; }
 h1, h2, h3 { text-wrap: balance; }
 .wrap { max-width: 1160px; margin: 0 auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
@@ -75,7 +76,21 @@ h1, h2, h3 { text-wrap: balance; }
 .site-nav a.nav-cta { background: var(--amber); color: var(--pine); margin-left: 6px; }
 .site-nav a.nav-cta:hover { background: var(--amber-hi); }
 @media (max-width: 760px) { .site-nav .opt { display: none; } }
-@media (max-width: 420px) { .site-nav a.nav-cta { display: none; } }
+@media (max-width: 420px) {
+  .site-header .wrap { gap: 8px; padding-block: 10px; }
+  .brand { font-size: 23px; gap: 8px; }
+  .brand img { width: 32px; height: 32px; }
+  .site-nav { gap: 2px; }
+  .site-nav a { font-size: 15px; padding: 10px 12px; }
+  .site-nav a.nav-cta { margin-left: 2px; }
+}
+@media (max-width: 349px) { .site-nav a.nav-cta { display: none; } }
+@media (max-width: 380px) {
+  .vignette { padding: 12px; }
+  .code { gap: 4px; }
+  .code span { width: 28px; height: 38px; font-size: 20px; }
+  .code .gap { width: 6px; }
+}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -319,9 +334,11 @@ section { scroll-margin-top: 80px; }
 @media (max-width: 960px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 56px; padding-block: 48px 88px; }
   .demo { max-width: 460px; }
-  .steps { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: minmax(0, 1fr); }
   .panel, .trust, .faq { grid-template-columns: 1fr; gap: 28px; }
 }
+/* Grid columns may shrink below their content's natural width (stops long emails widening the page). */
+.panel > *, .trust > *, .faq > *, .hero .wrap > * { min-width: 0; }
 @media (max-width: 560px) {
   body { font-size: 18px; }
   .block { padding-block: 80px 0; }
@@ -343,6 +360,32 @@ section { scroll-margin-top: 80px; }
   .switcher { border-radius: 30px; padding: 8px; }
   .facts { grid-template-columns: 1fr; }
   .label-slip { transform: none; }
+
+  /* Hero: keep the second phone inside the screen, full-width buttons */
+  .phone.family { width: 50%; }
+  .cta-row .button { flex: 1 1 100%; justify-content: center; padding: 16px 22px; }
+  .eyebrow { font-size: 14px; }
+
+  /* Comfortable spacing and touch targets */
+  .section-intro { font-size: 18px; margin-bottom: 32px; }
+  .steps li { border-radius: 26px; padding: 20px 20px 24px; }
+  .steps h3 { font-size: 23px; }
+  .panel li { font-size: 17px; padding: 12px 14px; gap: 12px; }
+  .tabs { margin: 6px 6px 0; }
+  .tabs button { font-size: 16px; padding: 10px 16px; }
+  .trust .big { font-size: 19px; }
+  .faq summary { font-size: 18px; padding: 18px 18px; }
+  .faq details p { padding: 0 18px 20px; }
+  .closing { border-radius: 30px; margin-top: 80px; }
+  .closing .button { width: 100%; justify-content: center; }
+  .closing p { font-size: 18px; }
+  .note { padding: 18px; gap: 14px; border-radius: 20px; }
+  .note::before { width: 38px; height: 38px; font-size: 19px; border-radius: 12px; }
+
+  /* Footer: stacked, with links large enough to tap */
+  .site-footer { margin-top: 56px; }
+  .site-footer .wrap { flex-direction: column; gap: 8px; padding-block: 24px 32px; font-size: 15px; }
+  .site-footer a { display: inline-block; padding: 10px 0; }
 }
 
 /* ---------- Long-form pages (support, privacy, terms) ---------- */
@@ -399,6 +442,9 @@ main.page { max-width: 920px; padding-block: 0 24px; }
   content: "@"; flex: none; width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center;
   background: var(--amber); color: var(--pine); font-family: var(--display); font-weight: 800; font-size: 22px;
 }
+/* The note's text is one block next to the "@" badge, so the 112 line can't split into columns. */
+.note-text { flex: 1; min-width: 0; }
+a.tel { white-space: nowrap; }
 .back-top { display: inline-flex; margin-top: 40px; font-weight: 700; font-size: 17px; }
 
 /* Finnish home: support answers as an accordion */
