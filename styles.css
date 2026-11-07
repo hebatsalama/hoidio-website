@@ -459,3 +459,8 @@ a.tel { white-space: nowrap; }
   .doc td { border-bottom: 0; padding: 8px 14px; }
   .doc td:first-child { background: var(--chip); font-weight: 700; padding-top: 12px; }
 }
+
+/* Promo video on the home page */
+.promo-video { margin: 0; max-width: 980px; border-radius: 24px; overflow: hidden; background: var(--pine-deep); border: 1px solid var(--line); box-shadow: 0 18px 50px -24px rgba(5, 42, 39, .45); }
+.promo-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+@media (max-width: 640px) { .promo-video { border-radius: 16px; } }
