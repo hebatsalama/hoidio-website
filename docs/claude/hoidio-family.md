@@ -4,7 +4,7 @@ Read `AGENTS.md` first. It has the product facts, file map, writing rules and ch
 
 **Goal:** the website explains clearly that Hoidio is free for the person taking the medicines, that a caregiver can follow one person for free, and that **Hoidio Family** (€4.99/month or €49.99/year, 14 days free) adds alerts, summaries and more people. Today the home pages don't mention any price, and the terms and privacy pages say a caregiver needs a subscription to follow anyone at all, which no longer matches the app ("free view").
 
-Work on the branch `codex/hoidio-family` (it already holds `AGENTS.md` and this brief), and open **one pull request** from it to `main` with all the changes below. Keep `AGENTS.md` in the PR. Use the texts below **word for word**. If a text doesn't fit the layout, keep the words and adjust the layout.
+Work on the branch `claude/hoidio-family` (it already holds `CLAUDE.md`, `AGENTS.md`, `.claude/` and this brief), and open **one pull request** from it to `main` with all the changes below. Keep `CLAUDE.md`, `AGENTS.md` and `.claude/` in the PR. Use the texts below **word for word**. If a text doesn't fit the layout, keep the words and adjust the layout.
 
 ---
 
@@ -252,4 +252,4 @@ Replace the retention bullet about a subscription ending (Heba approves this one
 - [ ] The new nav link scrolls to the Prices section on each page.
 - [ ] Every number on the site matches: €4.99 / €49.99, 14 days, 2 people, 3 caregivers.
 - [ ] The PR description lists (a) the website changes and (b) the terms and privacy changes separately, with the before and after text, for Heba to approve.
-- [ ] This brief (`docs/codex/hoidio-family.md`) is deleted in the last commit of the PR, so it isn't published on hoidio.com.
+- [ ] This brief (`docs/claude/hoidio-family.md`) is deleted in the last commit of the PR, so it isn't published on hoidio.com.

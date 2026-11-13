@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit(./*.html)",
+      "Edit(./fi/**)",
+      "Edit(./ar/**)",
+      "Edit(./styles.css)",
+      "Bash(python3 -m http.server:*)",
+      "Bash(grep:*)",
+      "Bash(sed -n:*)",
+      "Bash(ls:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout claude/hoidio-family)",
+      "Bash(git rm docs/claude/hoidio-family.md)",
+      "Bash(git push -u origin claude/hoidio-family)",
+      "Bash(git push origin claude/hoidio-family)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr view:*)",
+      "Bash(npx --yes html-validate:*)"
+    ],
+    "deny": [
+      "Bash(git push origin main:*)",
+      "Bash(git push origin HEAD:main:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(gh pr merge:*)",
+      "Edit(./CNAME)",
+      "Edit(./.nojekyll)",
+      "Edit(./media/**)",
+      "Edit(./logo.svg)"
+    ]
+  }
+}
