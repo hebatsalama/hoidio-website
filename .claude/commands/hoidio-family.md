@@ -1,5 +1,5 @@
 ---
-description: Add Hoidio Family (prices, free view, FAQ, terms and privacy) to the Hoidio website and open a pull request
+description: Add Hoidio Family (prices, FAQ, terms and privacy) to the Hoidio website and open a pull request
 ---
 
 Read AGENTS.md, then carry out docs/claude/hoidio-family.md completely, on the branch claude/hoidio-family (check it out first if you are not on it).

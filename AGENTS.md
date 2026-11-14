@@ -30,14 +30,17 @@ This repository is the public marketing website for **Hoidio**, a medication org
 
 ## Product facts (source of truth – do not invent others)
 
+**Final subscription model (decided 14 Nov 2026 by Heba and Ahmed – do not change or reopen):**
+
 - Hoidio is **free for the person whose medicines it tracks**: all of their own features, any number of medicines, and inviting caregivers. Always free.
-- **Free view for caregivers:** without a plan, a caregiver can follow **one** person and see their medicine schedule and the doses they have taken. No alerts, no summaries.
-- **Hoidio Family** is the paid caregiver plan:
+- **Caregivers need Hoidio Family from the very first caregiver.** There is **no free caregiver tier**: never write that a caregiver can follow someone, or see anything, for free (apart from the 14-day trial).
+- **Hoidio Family** is the caregiver plan. It is needed to follow a person at all, and includes:
+  - Seeing the person's medicine schedule, doses taken and "I'm OK" status
   - Alert if a reminder isn't confirmed or the daily "I'm OK" check-in isn't answered
   - Daily, weekly or monthly summaries
   - Follow up to **2 people**, with up to **3 caregivers** on one plan (only one caregiver pays)
   - The full health record when the person allows it: visits, side effects and measurements
-- Price: **€4.99 per month or €49.99 per year**, VAT included. Every new plan starts with a **14-day free trial**.
+- Price: **€4.99 per month or €49.99 per year**, VAT included. Every new caregiver starts with a **14-day free trial**; after it, a paid plan is needed to keep following.
 - Bought in the app through the App Store or Google Play. Renews automatically; cancel in the Apple or Google account settings at least 24 hours before the period ends. Deleting the app does not cancel it.
 - The apps are **not in the stores yet**. Keep "Coming soon for iPhone and Android". Never add store badges, download links or "available now".
 - App languages: Finnish, Swedish, English, Arabic. Users must be 18 or over.
