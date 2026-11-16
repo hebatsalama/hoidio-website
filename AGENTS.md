@@ -13,20 +13,22 @@ This repository is the public marketing website for **Hoidio**, a medication org
 
 ## Files and languages
 
-| Page | English | Finnish | Arabic (RTL) |
-| --- | --- | --- | --- |
-| Home | `index.html` | `fi/index.html` | `ar/index.html` |
-| Terms of use | `terms.html` | `fi/kayttoehdot.html` | – |
-| Privacy policy | `privacy.html` | `fi/tietosuoja.html` | – |
-| Support | `support.html` | – | – |
-| Not found | `404.html` | – | – |
+| Page | English | Finnish | Swedish | Arabic (RTL) |
+| --- | --- | --- | --- | --- |
+| Home | `index.html` | `fi/index.html` | `sv/index.html` | `ar/index.html` |
+| Terms of use | `terms.html` | `fi/kayttoehdot.html` | – | – |
+| Privacy policy | `privacy.html` | `fi/tietosuoja.html` | – | – |
+| Support | `support.html` | – | – | – |
+| Not found | `404.html` | – | – | – |
 
-- **English is the reference.** Any content change to a home page must be made in all three home pages (`index.html`, `fi/index.html`, `ar/index.html`), and any change to terms or privacy in both the English and the Finnish version. Keep the same section order and classes across languages.
-- Section ids differ by language and must stay as they are: English and Arabic use English ids (`#how`, `#faq`); Finnish uses Finnish ids (`#miten`, `#tuki`, `…-otsikko` for headings). The Finnish home page also has a longer FAQ and different nav links than the English one; keep those.
+- **English is the reference.** Any content change to a home page must be made in all four home pages (`index.html`, `fi/index.html`, `sv/index.html`, `ar/index.html`), and any change to terms or privacy in both the English and the Finnish version. Keep the same section order and classes across languages.
+- Every page's header links to the other languages (`Suomeksi`, `Svenska`, `English`, `العربية`). A new page gets the same language links.
+- Section ids differ by language and must stay as they are: English, Swedish and Arabic use English ids (`#how`, `#faq`); Finnish uses Finnish ids (`#miten`, `#tuki`, `…-otsikko` for headings). The Finnish home page also has a longer FAQ and different nav links than the English one; keep those.
+- The Swedish home page uses the English promo video (there is no Swedish one yet) and says so, and its terms and privacy links point to the English pages, marked "(på engelska)".
 - `styles.css` has a dark theme (`prefers-color-scheme: dark`). Use the CSS variables (`--surface`, `--ink`, `--muted`, `--accent`, `--chip`, `--line`, `--amber` …) instead of fixed colours so new parts work in both themes.
 - Arabic pages use `<html lang="ar" dir="rtl">`. Keep the RTL layout working: check that new components mirror correctly (use logical CSS properties such as `margin-inline-start`, `padding-inline`, `inset-inline-end` instead of left/right).
 - The plan name **Hoidio Family** stays in Latin script in every language (it is the name shown in the stores), as do App Store and Google Play. In Arabic running text the app itself is written هويديو, as the Arabic page already does.
-- Prices are written the local way: `4,99 €` in Finnish, `€4.99` in English, `4.99 €` in Arabic.
+- Prices are written the local way: `4,99 €` in Finnish and Swedish, `€4.99` in English, `4.99 €` in Arabic.
 
 ## Product facts (source of truth – do not invent others)
 
@@ -73,7 +75,7 @@ python3 -m http.server 8080
 grep -rhoE 'href="/[^"#]*' --include=*.html . | sed 's/href="//' | sort -u | while read p; do f=".$p"; [ -d "$f" ] && f="$f/index.html"; [ -e "$f" ] || echo "missing: $p"; done
 
 # 3. Section ids and headings per home page (compare: same sections, same order)
-for f in index.html fi/index.html ar/index.html; do echo "$f: $(grep -oE '<section[^>]*' $f | grep -oE 'id="[^"]+"|aria-labelledby="[^"]+"' | tr '\n' ' ')"; done
+for f in index.html fi/index.html sv/index.html ar/index.html; do echo "$f: $(grep -oE '<section[^>]*' $f | grep -oE 'id="[^"]+"|aria-labelledby="[^"]+"' | tr '\n' ' ')"; done
 
 # 4. HTML is well-formed (optional, needs network)
 npx --yes html-validate index.html fi/index.html ar/index.html terms.html fi/kayttoehdot.html privacy.html fi/tietosuoja.html
