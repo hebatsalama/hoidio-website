@@ -71,11 +71,11 @@ h1, h2, h3 { text-wrap: balance; }
 .brand:hover img { transform: rotate(-12deg) scale(1.06); }
 .brand .io { color: var(--mint); }
 .site-nav { display: flex; align-items: center; gap: 6px; }
-.site-nav a { color: var(--on-dark-soft); text-decoration: none; font-size: 17px; font-weight: 700; padding: 8px 14px; border-radius: 999px; transition: background .2s, color .2s; }
+.site-nav a { color: var(--on-dark-soft); text-decoration: none; white-space: nowrap; font-size: 17px; font-weight: 700; padding: 8px 14px; border-radius: 999px; transition: background .2s, color .2s; }
 .site-nav a:hover { color: var(--on-dark); background: rgba(255, 255, 255, .08); }
 .site-nav a.nav-cta { background: var(--amber); color: var(--pine); margin-left: 6px; }
 .site-nav a.nav-cta:hover { background: var(--amber-hi); }
-@media (max-width: 760px) { .site-nav .opt { display: none; } }
+@media (max-width: 860px) { .site-nav .opt { display: none; } }
 @media (max-width: 420px) {
   .site-header .wrap { gap: 8px; padding-block: 10px; }
   .brand { font-size: 23px; gap: 8px; }
@@ -486,9 +486,9 @@ a.tel { white-space: nowrap; }
 .promo-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
 @media (max-width: 640px) { .promo-video { border-radius: 16px; } }
 
-/* Language links in the header: short labels on phones so three languages fit */
+/* Language links in the header: short labels on smaller screens so all four languages fit */
 .lang-short { display: none; }
-@media (max-width: 520px) {
+@media (max-width: 1100px) {
   .site-nav a.lang { padding-inline: 9px; }
   .site-nav a.lang .lang-full { display: none; }
   .site-nav a.lang .lang-short { display: inline; }
