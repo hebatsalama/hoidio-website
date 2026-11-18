@@ -45,7 +45,7 @@ This repository is the public marketing website for **Hoidio**, a medication org
 - The apps are **not in the stores yet**. Keep "Coming soon for iPhone and Android". Never add store badges, download links or "available now".
 - App languages: Finnish, Swedish, English, Arabic. Users must be 18 or over.
 - Data is stored in the EU (Frankfurt). No ads, no tracking, never sold.
-- Company line (footer): `© 2026 Laryngology Courses Oy (HLC-International), Espoo, Finland`. Do not change it.
+- Company name: write **HLC-International** (the auxiliary business name, aputoiminimi, of Laryngology Courses Oy). Footer: `© 2026 HLC-International, Espoo, Finland` (Finnish pages: `…, Espoo`). Never add "Oy" to HLC-International. Terms and privacy keep the legal company and Business ID 3421195-7 next to it (e.g. "HLC-International, an auxiliary business name of Laryngology Courses Oy"). Do not change this without Ahmed or Heba.
 
 ## Writing rules
 
