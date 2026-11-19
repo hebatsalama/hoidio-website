@@ -42,7 +42,7 @@ This repository is the public marketing website for **Hoidio**, a medication org
   - The full health record when the person allows it: visits, side effects and measurements
 - Price: **€4.99 per month or €49.99 per year**, VAT included. Every new caregiver starts with a **14-day free trial**; after it, a paid plan is needed to keep following.
 - Bought in the app through the App Store or Google Play. Renews automatically; cancel in the Apple or Google account settings at least 24 hours before the period ends. Deleting the app does not cancel it.
-- The apps are **not in the stores yet**. Keep "Coming soon for iPhone and Android". Never add store badges, download links or "available now".
+- The apps are in the stores. The home pages link to them in the hero and the FAQ: App Store https://apps.apple.com/app/id6831315840 and Google Play https://play.google.com/store/apps/details?id=com.hoidio.app. Use these exact addresses.
 - App languages: Finnish, Swedish, English, Arabic. Users must be 18 or over.
 - Data is stored in the EU (Frankfurt). No ads, no tracking, never sold.
 - Company line (footer): `© 2026 Laryngology Courses Oy (HLC-International), Espoo, Finland`. Do not change it.
