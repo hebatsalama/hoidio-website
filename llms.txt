@@ -1,0 +1,25 @@
+# Hoidio
+
+> Hoidio is a medication reminder and organizer app for older adults and the family members who care for them. It was designed by a pharmacist in Finland and is made by HLC-International (Espoo, Finland). Hoidio is coming soon for iPhone and Android, in Finnish, Swedish, English and Arabic.
+
+Key facts:
+
+- Free for the person whose medicines it tracks: all of their own features, any number of medicines, and inviting caregivers. No ads.
+- The person keeps their medicines, dose times, refills, doctor visits, measurements, side effects and emergency information in one place, and gets a reminder at every dose time.
+- Family caregivers use the Hoidio Family plan to follow a person: see the medicine schedule, doses taken and the daily "I'm OK" check-in, and can get an alert if a reminder isn't confirmed or the check-in isn't answered. It also gives daily, weekly or monthly summaries, and the full health record when the person allows it.
+- Hoidio Family costs €4.99 per month or €49.99 per year (VAT included), with a 14-day free trial. One plan covers up to 2 people followed and up to 3 caregivers; only one caregiver pays. It is bought in the app through the App Store or Google Play.
+- Data is stored in the EU (Frankfurt), is never sold, and there is no tracking. Users must be 18 or over.
+- Hoidio organizes information and reminds. It does not diagnose, treat or give medical advice, and it does not replace a doctor or pharmacist.
+
+## Pages
+
+- [Hoidio (English)](https://hoidio.com/): what Hoidio does, Hoidio Family prices and the FAQ
+- [Hoidio (suomeksi)](https://hoidio.com/fi/): Finnish home page with a longer FAQ
+- [Hoidio (på svenska)](https://hoidio.com/sv/): Swedish home page
+- [هويديو (بالعربية)](https://hoidio.com/ar/): Arabic home page
+- [Support](https://hoidio.com/support.html): help with signing in, reminders, caregivers and the account; contact support@hoidio.com
+
+## Legal
+
+- [Terms of use](https://hoidio.com/terms.html) ([suomeksi](https://hoidio.com/fi/kayttoehdot.html))
+- [Privacy policy](https://hoidio.com/privacy.html) ([suomeksi](https://hoidio.com/fi/tietosuoja.html))

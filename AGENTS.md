@@ -54,6 +54,14 @@ This repository is the public marketing website for **Hoidio**, a medication org
 - Never promise that an alert always arrives. Say "can get an alert".
 - Do not mention competitors.
 
+## Search engines and AI assistants
+
+- Every page's `<head>` has: a title (about 50–60 characters) and description (up to about 160), `rel="canonical"`, `hreflang` links to its translations plus `x-default` (the English page), Open Graph tags (`og:title`, `og:description`, `og:url`, `og:image` with that language's promo poster, `og:locale`) and `twitter:card`.
+- The four home pages also have one `application/ld+json` block (Organization, WebSite, MobileApplication, FAQPage). **When you change a home page FAQ, update the FAQPage answers in the same page's JSON-LD.**
+- When you add, rename or remove a page, update `sitemap.xml` (with its `xhtml:link` alternates) and `llms.txt` in the same pull request.
+- `llms.txt` is the plain-language summary for AI assistants. Keep it in line with the product facts above.
+- `robots.txt` allows all crawlers, including AI crawlers, and points to the sitemap. `404.html` stays `noindex`.
+
 ## Accessibility (required)
 
 - One `<h1>` per page; sections use `<section aria-labelledby="…">` with a matching heading id, like the existing sections.
