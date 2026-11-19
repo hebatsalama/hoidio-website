@@ -1,0 +1,9 @@
+# hoidio.com – all search engines and AI assistants are welcome.
+User-agent: *
+Allow: /
+# Instructions for the people and tools who build this site, not pages for visitors
+Disallow: /.claude/
+Disallow: /AGENTS.md
+Disallow: /CLAUDE.md
+
+Sitemap: https://hoidio.com/sitemap.xml

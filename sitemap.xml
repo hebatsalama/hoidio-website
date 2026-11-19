@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hoidio.com/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://hoidio.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hoidio.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/"/>
+  </url>
+  <url>
+    <loc>https://hoidio.com/fi/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://hoidio.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hoidio.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/"/>
+  </url>
+  <url>
+    <loc>https://hoidio.com/sv/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://hoidio.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hoidio.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/"/>
+  </url>
+  <url>
+    <loc>https://hoidio.com/ar/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://hoidio.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hoidio.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/"/>
+  </url>
+  <url>
+    <loc>https://hoidio.com/support.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://hoidio.com/terms.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/kayttoehdot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hoidio.com/fi/kayttoehdot.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/kayttoehdot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hoidio.com/privacy.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hoidio.com/fi/tietosuoja.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoidio.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/tietosuoja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/privacy.html"/>
+  </url>
+</urlset>
