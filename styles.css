@@ -143,6 +143,8 @@ h1, h2, h3 { text-wrap: balance; }
 .stores .label { font-size: 15px; color: var(--on-dark-soft); margin-right: 4px; }
 .store { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 12px; font-size: 15px; font-weight: 700; color: var(--on-dark); background: rgba(0, 0, 0, .25); border: 1px solid rgba(255, 255, 255, .16); }
 .store svg { width: 18px; height: 18px; fill: currentColor; }
+a.store { min-height: 44px; text-decoration: none; }
+a.store:hover { background: rgba(0, 0, 0, .4); }
 
 /* ---------- Two phones ---------- */
 .demo { position: relative; justify-self: center; width: 100%; max-width: 480px; display: flex; align-items: flex-start; }
