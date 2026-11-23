@@ -8,8 +8,8 @@ This repository is the public marketing website for **Hoidio**, a medication org
 - `.nojekyll` is present, so every file in the repo is published as is. `CNAME` must stay `hoidio.com`.
 - One shared stylesheet: `styles.css`. Reuse its existing classes and CSS variables before adding new ones. New CSS goes into `styles.css`, never inline `<style>` blocks or `style=""` attributes.
 - Icons are inline SVG (24×24 viewBox, `stroke="currentColor"`, `stroke-width="2"`, round caps and joins, `aria-hidden="true"`). Follow the same pattern for new icons.
-- The only script on the site is the small tab switcher at the bottom of each `index.html`. Keep scripts minimal and vanilla.
-- No analytics, trackers, cookies, cookie banners, external widgets or new third-party requests. The site promises "no tracking". The only external resource is Google Fonts.
+- Scripts on the site: the small tab switcher at the bottom of each `index.html`, and `ga.js` (Google Analytics) in every page's `<head>`. Keep scripts minimal and vanilla.
+- Website statistics: Google Analytics 4 (`G-91C7M618EW`) in **cookieless mode only** (decided by Ahmed, 23 Nov 2026): `analytics_storage`, ad storage and all other consent types stay `denied`, Google signals and ad personalisation off. Never set cookies or local storage, never add a cookie banner, other trackers, pixels, external widgets or new third-party requests. External resources: Google Fonts and Google Analytics only. The privacy policy (EN + FI, section 5 "Website statistics") describes this; update it if the setup changes.
 
 ## Files and languages
 
