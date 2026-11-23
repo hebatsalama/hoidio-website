@@ -20,6 +20,9 @@ This repository is the public marketing website for **Hoidio**, a medication org
 | Privacy policy | `privacy.html` | `fi/tietosuoja.html` | – | – |
 | Support | `support.html` | – | – | – |
 | Not found | `404.html` | – | – | – |
+| Guides (SEO) | – | `fi/laakemuistutus.html`, `fi/omaishoitaja-laakkeet.html`, `fi/laakelista.html`, `fi/reseptin-uusiminen.html`, `fi/dosetti-vai-sovellus.html` | – | – |
+
+- The Finnish guide pages are general, practical texts (no medical advice). Heba (licensed pharmacist) checks any change to their health content. Each has an `Article` JSON-LD block and a sitemap entry.
 
 - **English is the reference.** Any content change to a home page must be made in all four home pages (`index.html`, `fi/index.html`, `sv/index.html`, `ar/index.html`), and any change to terms or privacy in both the English and the Finnish version. Keep the same section order and classes across languages.
 - Section ids differ by language and must stay as they are: English, Swedish and Arabic use English ids (`#how`, `#faq`); Finnish uses Finnish ids (`#miten`, `#tuki`, `…-otsikko` for headings). The Finnish home page also has a longer FAQ and different nav links than the English one; keep those.

@@ -68,4 +68,24 @@
     <xhtml:link rel="alternate" hreflang="fi" href="https://hoidio.com/fi/tietosuoja.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hoidio.com/privacy.html"/>
   </url>
+  <url>
+    <loc>https://hoidio.com/fi/laakemuistutus.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://hoidio.com/fi/omaishoitaja-laakkeet.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://hoidio.com/fi/laakelista.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://hoidio.com/fi/reseptin-uusiminen.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://hoidio.com/fi/dosetti-vai-sovellus.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
 </urlset>
