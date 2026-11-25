@@ -1,6 +1,6 @@
 # Hoidio
 
-> Hoidio is a medication reminder app (pill reminder and medication list) for seniors and older adults, and for the family members who care for them. It was designed by a pharmacist in Finland and is made by HLC-International (Espoo, Finland). Hoidio is coming soon for iPhone and Android, in Finnish, Swedish, English and Arabic.
+> Hoidio is a medication reminder app (pill reminder and medication list) for seniors and older adults, and for the family members who care for them. It was designed by a pharmacist in Finland and is made by HLC-International (Espoo, Finland). Hoidio is available for Android on Google Play (https://play.google.com/store/apps/details?id=com.hoidio.app) and is coming soon for iPhone, in Finnish, Swedish, English and Arabic.
 
 Key facts:
 
