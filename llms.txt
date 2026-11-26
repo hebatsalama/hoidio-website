@@ -19,6 +19,14 @@ Key facts:
 - [هويديو (بالعربية)](https://hoidio.com/ar/): Arabic home page
 - [Support](https://hoidio.com/support.html): help with signing in, reminders, caregivers and the account; contact support@hoidio.com
 
+## Guides (Finnish)
+
+- [Lääkemuistutus puhelimeen – näin se toimii](https://hoidio.com/fi/laakemuistutus.html): Lääkemuistutus puhelimessa auttaa ottamaan lääkkeet oikeaan aikaan. Näin muistutukset toimivat, mitä kannattaa tarkistaa ja miten läheiset voivat auttaa.
+- [Omaishoitaja: näin autat läheistä muistamaan lääkkeet](https://hoidio.com/fi/omaishoitaja-laakkeet.html): Käytännön vinkkejä omaishoitajalle ja aikuiselle lapselle: miten tuet läheisen lääkkeiden ottamista, myös etänä, ja sovitte yhdessä, mitä jaetaan.
+- [Ajantasainen lääkelista – miksi ja miten](https://hoidio.com/fi/laakelista.html): Ajantasainen lääkelista auttaa lääkärikäynnillä, apteekissa ja hätätilanteessa. Näin kokoat listan, pidät sen ajan tasalla ja vertaat sitä OmaKantaan.
+- [Reseptin uusiminen OmaKannassa – muistilista](https://hoidio.com/fi/reseptin-uusiminen.html): Muistilista reseptin uusimiseen: milloin uusimispyyntö kannattaa tehdä, miten se tehdään OmaKannassa ja mitä tehdä, jos lääke on jo loppumassa.
+- [Dosetti vai sovellus?](https://hoidio.com/fi/dosetti-vai-sovellus.html): Dosetti, apteekin annosjakelu vai lääkemuistutus puhelimessa? Näin vertailet vaihtoehtoja ja yhdistät ne niin, että lääkkeet tulee otettua oikein.
+
 ## Legal
 
 - [Terms of use](https://hoidio.com/terms.html) ([suomeksi](https://hoidio.com/fi/kayttoehdot.html))
