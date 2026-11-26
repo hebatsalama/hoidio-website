@@ -345,6 +345,25 @@ section { scroll-margin-top: 80px; }
 .closing > * { position: relative; z-index: 1; min-width: 0; }
 .closing h2 { font-family: var(--display); font-weight: 800; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.02; letter-spacing: -0.03em; margin: 0 0 12px; max-width: 16ch; }
 .closing p { margin: 0; color: var(--on-dark-soft); font-size: 20px; }
+.closing { align-items: flex-start; }
+.closing-copy { flex: 1 1 320px; display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+.closing-copy h2 { margin: 0; }
+.closing a:not(.button) { color: var(--on-dark); text-decoration: underline; text-underline-offset: 3px; }
+
+/* iPhone launch sign-up */
+.notify { flex: 1 1 340px; max-width: 480px; display: grid; gap: 12px; padding: clamp(22px, 3vw, 30px); border-radius: 28px; background: rgba(255, 255, 255, .07); border: 1px solid rgba(126, 226, 212, .25); }
+.notify h3 { margin: 0 0 4px; font-family: var(--display); font-weight: 800; font-size: 24px; line-height: 1.2; }
+.notify label { font-weight: 700; font-size: 17px; }
+.notify input[type="email"] { width: 100%; min-height: 52px; padding: 12px 16px; border-radius: 14px; border: 2px solid rgba(255, 255, 255, .35); background: rgba(0, 0, 0, .25); color: var(--on-dark); font: inherit; font-size: 18px; }
+.notify input[type="email"]:focus-visible, .notify input[type="checkbox"]:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+.notify .check { display: flex; align-items: flex-start; gap: 12px; }
+.notify .check input { flex: none; width: 26px; height: 26px; margin: 2px 0 0; accent-color: var(--amber); }
+.notify .check label { font-weight: 400; font-size: 16px; line-height: 1.45; color: var(--on-dark-soft); }
+.notify .notify-privacy { margin: 0; font-size: 15px; }
+.notify .button { justify-self: start; border: 0; cursor: pointer; font-family: inherit; }
+.notify .button:disabled { opacity: .6; cursor: wait; }
+.notify .notify-status { margin: 0; font-size: 17px; font-weight: 700; color: var(--on-dark); min-height: 1.4em; }
+.notify .notify-status.is-error { color: var(--amber); }
 .disclaimer { font-size: 16px; color: var(--muted); margin: 40px 0 0; max-width: 70ch; }
 
 /* Footer */
@@ -405,6 +424,8 @@ section { scroll-margin-top: 80px; }
   .faq details p { padding: 0 18px 20px; }
   .closing { border-radius: 30px; margin-top: 80px; }
   .closing .button { width: 100%; justify-content: center; }
+  .notify { max-width: none; }
+  .notify .button { justify-self: stretch; }
   .closing p { font-size: 18px; }
   .note { padding: 18px; gap: 14px; border-radius: 20px; }
   .note::before { width: 38px; height: 38px; font-size: 19px; border-radius: 12px; }

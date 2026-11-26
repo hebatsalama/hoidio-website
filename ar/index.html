@@ -285,12 +285,24 @@
     </div>
   </section>
 
-  <section class="closing" aria-labelledby="closing-title">
-    <div>
-      <h2 id="closing-title">متوفر الآن على Android، وقريبًا على iPhone</h2>
-      <p>هل لديك أسئلة؟ يسعدنا مساعدتك.</p>
+  <section class="closing" id="get" aria-labelledby="closing-title">
+    <div class="closing-copy">
+      <h2 id="closing-title">حمّل هويديو على Android، وقريبًا على iPhone</h2>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.hoidio.app">حمّله من Google Play <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p>هل لديك أسئلة؟ <a href="mailto:support@hoidio.com">يسعدنا مساعدتك.</a></p>
     </div>
-    <a class="button primary" href="mailto:support@hoidio.com">تواصل مع الدعم <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <form class="notify" method="post" aria-labelledby="notify-title" data-lang="ar" data-ok="شكرًا لك! سنراسلك عندما يتوفر هويديو على iPhone." data-dup="أنت مسجّل بالفعل. سنراسلك عندما يتوفر هويديو على iPhone." data-err="عذرًا، لم تنجح العملية. حاول مرة أخرى أو راسلنا على support@hoidio.com." novalidate>
+      <h3 id="notify-title">أخبروني عندما يتوفر على iPhone</h3>
+      <label for="notify-email">بريدك الإلكتروني</label>
+      <input id="notify-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required>
+      <div class="check">
+        <input id="notify-consent" name="consent" type="checkbox" required>
+        <label for="notify-consent">نعم، أوافق على أن يرسل لي هويديو رسالة واحدة بالبريد الإلكتروني عند توفر التطبيق على iPhone.</label>
+      </div>
+      <p class="notify-privacy"><a href="/privacy.html#notify">كيف نتعامل مع بريدك الإلكتروني (بالإنجليزية)</a></p>
+      <button class="button primary" type="submit">أخبروني</button>
+      <p class="notify-status" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
   <p class="disclaimer">يساعدك هويديو على تنظيم معلوماتك الصحية، ولا يغني عن نصيحة طبيبك أو الصيدلي.</p>
@@ -304,6 +316,7 @@
   </div>
 </footer>
 
+<script src="/notify.js" defer></script>
 <script>
 (function () {
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));

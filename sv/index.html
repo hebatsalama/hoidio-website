@@ -284,12 +284,24 @@
     </div>
   </section>
 
-  <section class="closing" aria-labelledby="closing-title">
-    <div>
-      <h2 id="closing-title">Nu för Android, snart för iPhone</h2>
-      <p>Frågor? Vi hjälper gärna till.</p>
+  <section class="closing" id="get" aria-labelledby="closing-title">
+    <div class="closing-copy">
+      <h2 id="closing-title">Hämta Hoidio för Android – snart för iPhone</h2>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.hoidio.app">Hämta på Google Play <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p>Frågor? <a href="mailto:support@hoidio.com">Vi hjälper gärna till.</a></p>
     </div>
-    <a class="button primary" href="mailto:support@hoidio.com">Kontakta supporten <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <form class="notify" method="post" aria-labelledby="notify-title" data-lang="sv" data-ok="Tack! Vi mejlar dig när Hoidio finns för iPhone." data-dup="Du står redan på listan. Vi mejlar dig när Hoidio finns för iPhone." data-err="Tyvärr fungerade det inte. Försök igen eller mejla support@hoidio.com." novalidate>
+      <h3 id="notify-title">Meddela mig när Hoidio finns för iPhone</h3>
+      <label for="notify-email">Din e-postadress</label>
+      <input id="notify-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required>
+      <div class="check">
+        <input id="notify-consent" name="consent" type="checkbox" required>
+        <label for="notify-consent">Ja, Hoidio får skicka mig ett e-postmeddelande när iPhone-appen finns.</label>
+      </div>
+      <p class="notify-privacy"><a href="/privacy.html#notify">Så hanterar vi din e-postadress (på engelska)</a></p>
+      <button class="button primary" type="submit">Meddela mig</button>
+      <p class="notify-status" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
   <p class="disclaimer">Hoidio hjälper dig att ordna din hälsoinformation. Det ersätter inte råd från läkare eller farmaceut.</p>
@@ -303,6 +315,7 @@
   </div>
 </footer>
 
+<script src="/notify.js" defer></script>
 <script>
 (function () {
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
