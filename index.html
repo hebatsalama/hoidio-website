@@ -284,12 +284,24 @@
     </div>
   </section>
 
-  <section class="closing" aria-labelledby="closing-title">
-    <div>
-      <h2 id="closing-title">Now on Android, soon on iPhone</h2>
-      <p>Questions? We're happy to help.</p>
+  <section class="closing" id="get" aria-labelledby="closing-title">
+    <div class="closing-copy">
+      <h2 id="closing-title">Get Hoidio on Android. iPhone coming soon.</h2>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.hoidio.app">Get it on Google Play <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p>Questions? <a href="/support.html">We're happy to help.</a></p>
     </div>
-    <a class="button primary" href="/support.html">Contact support <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <form class="notify" method="post" aria-labelledby="notify-title" data-lang="en" data-ok="Thank you! We'll email you when Hoidio is on iPhone." data-dup="You're already on the list. We'll email you when Hoidio is on iPhone." data-err="Sorry, that didn't work. Please try again, or email support@hoidio.com." novalidate>
+      <h3 id="notify-title">Tell me when it's on iPhone</h3>
+      <label for="notify-email">Your email address</label>
+      <input id="notify-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required>
+      <div class="check">
+        <input id="notify-consent" name="consent" type="checkbox" required>
+        <label for="notify-consent">Yes, Hoidio may email me once when the iPhone app is available.</label>
+      </div>
+      <p class="notify-privacy"><a href="/privacy.html#notify">How we handle your email</a></p>
+      <button class="button primary" type="submit">Notify me</button>
+      <p class="notify-status" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
   <p class="disclaimer">Hoidio helps you organize your health information. It does not replace advice from your doctor or pharmacist.</p>
@@ -303,6 +315,7 @@
   </div>
 </footer>
 
+<script src="/notify.js" defer></script>
 <script>
 (function () {
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));

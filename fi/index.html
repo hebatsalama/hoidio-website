@@ -298,12 +298,24 @@
     </div>
   </section>
 
-  <section class="closing" aria-labelledby="loppu-otsikko">
-    <div>
-      <h2 id="loppu-otsikko">Nyt Androidille, pian iPhoneen</h2>
-      <p>Kysyttävää? Autamme mielellämme.</p>
+  <section class="closing" id="lataa" aria-labelledby="loppu-otsikko">
+    <div class="closing-copy">
+      <h2 id="loppu-otsikko">Lataa Hoidio Androidille – iPhoneen tulossa pian</h2>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.hoidio.app">Lataa Google Playsta <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p>Kysyttävää? <a href="mailto:support@hoidio.com">Autamme mielellämme.</a></p>
     </div>
-    <a class="button primary" href="mailto:support@hoidio.com">Lähetä viesti <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <form class="notify" method="post" aria-labelledby="ilmoitus-otsikko" data-lang="fi" data-ok="Kiitos! Lähetämme sinulle sähköpostia, kun Hoidio on saatavilla iPhonelle." data-dup="Olet jo listalla. Lähetämme sinulle sähköpostia, kun Hoidio on saatavilla iPhonelle." data-err="Valitettavasti tämä ei onnistunut. Yritä uudelleen tai kirjoita osoitteeseen support@hoidio.com." novalidate>
+      <h3 id="ilmoitus-otsikko">Ilmoita minulle, kun Hoidio tulee iPhoneen</h3>
+      <label for="notify-email">Sähköpostiosoitteesi</label>
+      <input id="notify-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required>
+      <div class="check">
+        <input id="notify-consent" name="consent" type="checkbox" required>
+        <label for="notify-consent">Kyllä, Hoidio saa lähettää minulle yhden sähköpostin, kun iPhone-sovellus on saatavilla.</label>
+      </div>
+      <p class="notify-privacy"><a href="/fi/tietosuoja.html#ilmoitus">Näin käsittelemme sähköpostiosoitettasi</a></p>
+      <button class="button primary" type="submit">Ilmoita minulle</button>
+      <p class="notify-status" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
   <p class="disclaimer">Hoidio auttaa sinua järjestämään terveystietosi. Se ei korvaa lääkärin tai farmaseutin neuvoja.</p>
@@ -317,6 +329,7 @@
   </div>
 </footer>
 
+<script src="/notify.js" defer></script>
 <script>
 (function () {
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
